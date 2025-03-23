@@ -6,15 +6,19 @@ Recipe Finder is a web/mobile application that allow users to search for recipes
  Recipe finder app structure 
  
 * Components
-    NavBar
+    
     SearchBar
-    RecipeCard
+    RecipeDetails
     RecipeList
+    Favorite list
+    Shopping List
+    Recipe categories
     Footer
-* Main Pages
-      Home
-      RecipeDetails
-      Favorite 
+
+Dark mode 
+    
+    
+      
 
 * Style
     Tailwind
