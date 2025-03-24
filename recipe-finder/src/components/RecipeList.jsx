@@ -10,7 +10,7 @@ export default function RecipeList({ recipes, onSelectRecipe }) {
                     </div>
                 ))
             ) : (
-              <p className="error-message">No recipe found. Please try another search.</p>
+              <p className="error-message">No recipes found. Please try another search.</p>
             )}
         </div>
     );

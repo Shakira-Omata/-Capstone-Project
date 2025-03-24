@@ -4,7 +4,7 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #BC78BF;
     color: #0e0909;
     background-image: linear-gradient(315deg, #BC78BF 0%, #BC78BF 74%);
@@ -25,3 +25,67 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.app-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e0909;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/* SearchBar.jsx */
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.search-input {
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #9eaecf;
+    color: #000;
+    border: 1px solid #d1d5db;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #c93221;
+    color: #fff;
+}
+
+/* RecipeList.jsx */
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.recipe-card {
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+

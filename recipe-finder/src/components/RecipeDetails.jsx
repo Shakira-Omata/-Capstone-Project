@@ -8,7 +8,9 @@ export default function RecipeDetails({ recipe, onBack }) {
                 <button onClick={onBlock} className="back-button">&larr; Back to results</button>
                 <img src={recipe.strMealThumb} alt={recipe.strMeal} className="recipe-details-image" />
                 <h1 className="recipe-details-title">{recipe.strMeal}</h1>
-                <p className="recipe-details-category">{recipe.strCategory}</p>
+                <p className="recipe-details-category">
+        <strong>Category:</strong> {recipe.strCategory} | <strong>Cuisine:</strong> {recipe.strArea}
+      </p>
                 <h2 className="recipe-details-subtitle">Ingredients</h2>
                 <ul className="recipe-details-ingredients">
                     {ingredients.map((ingredient, index) => (
