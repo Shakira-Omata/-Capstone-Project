@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const RecipeCard = ({ recipe }) => {
   return (
     <Link to={`/recipe/${recipe.idMeal}`}>
-      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}

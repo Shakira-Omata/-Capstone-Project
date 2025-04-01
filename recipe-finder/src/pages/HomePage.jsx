@@ -49,8 +49,10 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Recipe Finder</h1>
+    <div className="container mx-auto px-4 py-8 w-full bg-white rounded-lg shadow-sm"> 
+      <h1 className="text-3xl font-bold text-left mb-8">Recipe Finder</h1>
+      <p className="text-left mb-4">Welcome To Recipe Finder!</p>
+      <p className="text-left  mb-8">Your Ultimate Recipe Companion.</p>
       
       <SearchBar
         searchTerm={searchTerm}
@@ -75,7 +77,7 @@ const HomePage = () => {
           <h2 className="text-2xl font-semibold mb-6">
             {searchTerm ? `Search Results for "${searchTerm}"` : 'Popular Recipes'}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
             {recipes.map((recipe) => (
               <RecipeCard key={recipe.idMeal} recipe={recipe} />
             ))}

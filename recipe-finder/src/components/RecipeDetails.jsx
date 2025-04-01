@@ -57,7 +57,7 @@ const RecipeDetails = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="max-w-full mx-auto p-4"> 
       <Link
         to="/"
         className="inline-flex items-center mb-6 text-blue-500 hover:text-blue-700 transition"
@@ -66,7 +66,7 @@ const RecipeDetails = () => {
         Back to recipes
       </Link>
 
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden w-full"> 
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
