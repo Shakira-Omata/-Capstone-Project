@@ -66,7 +66,7 @@ const RecipeDetails = () => {
         Back to recipes
       </Link>
 
-      <div className="bg-white rounded-lg shadow-md overflow-hidden w-full"> 
+      <div className="bg-purple-500 rounded-lg shadow-md overflow-hidden w-full"> 
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
@@ -109,7 +109,7 @@ const RecipeDetails = () => {
                     <span>
                       <span className="font-medium">{item.ingredient}</span>
                       {item.measure && (
-                        <span className="text-gray-600 ml-1">- {item.measure}</span>
+                        <span className="text-black ml-1">- {item.measure}</span>
                       )}
                     </span>
                   </li>

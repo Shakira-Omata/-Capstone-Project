@@ -6,7 +6,10 @@ import RecipeDetails from './components/RecipeDetails';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-custom-purple-500">
+      <div className="h-screen bg-gray-100">
+        <header className="bg-purple-500 text-white p-4">
+          <h1 className="text-3xl font-bold">Recipe Finder</h1>
+        </header>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe/:id" element={<RecipeDetails />} />

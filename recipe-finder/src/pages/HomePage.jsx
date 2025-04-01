@@ -49,10 +49,9 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8 w-full bg-white rounded-lg shadow-sm"> 
-      <h1 className="text-3xl font-bold text-left mb-8">Recipe Finder</h1>
-      <p className="text-left mb-4">Welcome To Recipe Finder!</p>
-      <p className="text-left  mb-8">Your Ultimate Recipe Companion.</p>
+    <div className="container mx-auto px-4 py-8 w-full bg-purple-500 rounded-lg shadow-sm"> 
+      <p className="text-center mb-4">Welcome To Recipe Finder!</p>
+      <p className="text-center  mb-8">Your Ultimate Recipe Companion.</p>
       
       <SearchBar
         searchTerm={searchTerm}
@@ -67,7 +66,7 @@ const HomePage = () => {
       )}
 
       {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
+        <div className="bg-purple-500 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
           {error}
         </div>
       )}
