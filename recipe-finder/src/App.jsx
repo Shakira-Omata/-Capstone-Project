@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import RecipeDetails from './components/RecipeDetails';
+import FavoritesPage from './pages/FavoritesPage';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe/:id" element={<RecipeDetails />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
         </Routes>
       </div>
     </Router>

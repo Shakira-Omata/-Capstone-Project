@@ -50,7 +50,9 @@ const HomePage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Recipe Finder</h1>
+      <h1 className="text-3xl font-bold text-left  mb-8">Recipe Finder</h1>
+        <p className="text-center mb-4">Welcome to Your Recipe Finder</p>
+        <p className="text-center mb-8">Your Ultimate Cook Companion</p>
       
       <SearchBar
         searchTerm={searchTerm}
@@ -65,7 +67,7 @@ const HomePage = () => {
       )}
 
       {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
+        <div className="bg-fuchsia-700 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
           {error}
         </div>
       )}
