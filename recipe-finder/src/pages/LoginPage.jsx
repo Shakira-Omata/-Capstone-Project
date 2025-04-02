@@ -21,7 +21,16 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-purple-500">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-purple-500 px-4">
+      {/* Heading */}
+      <h1 className="text-3xl font-bold text-white text-center mb-6">
+        Welcome to Recipe Finder
+      </h1>
+      <p className="text-white text-lg text-center mb-8">
+        Your Ultimate Recipe Companion
+      </p>
+
+      {/* Login Form */}
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
@@ -59,6 +68,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-// This code defines a LoginPage component that allows users to log in to the application. It uses the useAuth context to handle authentication and redirects users to the home page upon successful login. The component includes form validation and error handling for invalid credentials.
-// Styled using Tailwind CSS classes for a modern and responsive design.
