@@ -50,8 +50,6 @@ const HomePage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 w-full  bg-purple-500 rounded-lg shadow-sm"> 
-      <p className="text-center mb-4">Welcome To Recipe Finder!</p>
-      <p className="text-center  mb-8">Your Ultimate Recipe Companion.</p>
       
       <SearchBar
         searchTerm={searchTerm}

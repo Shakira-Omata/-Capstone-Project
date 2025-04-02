@@ -32,7 +32,7 @@ const SignupPage = () => {
       <div className="text-center mb-40 bg-black p-20  shadow-md  rounded-lg">  
         <h1 className="text-4xl font-semibold text-white ">Welcome to Recipe Finder
         </h1>
-        <p className="text-white font-semibold text-lg mt-2 ">Your<br></br> Ultimate Recipe Companion</p>
+        <p className="text-white font-semibold text-lg mt-2 ">Your<br></br> <br></br> Ultimate Recipe Companion</p>
       </div>
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
@@ -70,7 +70,7 @@ const SignupPage = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-purple-500 text-white py-2 rounded-lg hover:bg-green-600 transition"
+            className="w-full bg-black text-white py-2 rounded-lg hover:bg-green-600 transition"
           >
             Sign Up
           </button>
