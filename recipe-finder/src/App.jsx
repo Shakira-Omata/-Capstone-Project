@@ -12,9 +12,9 @@ function App() {
     <Router>
       <AuthProvider>
         <Navbar />
-      <div className="h-screen bg-gray-100">
+      <div className="w-full min-h-screen bg-purple-500">
         <header className="bg-purple-500 text-white p-4">
-          <h1 className="text-3xl font-bold">Recipe Finder</h1>
+          <h1 className="text-3xl font-bold text-center">Recipe Finder</h1>
         </header>
         <Routes>
           <Route path="/" element={<HomePage />} />

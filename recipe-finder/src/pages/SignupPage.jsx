@@ -20,14 +20,14 @@ const SignupPage = () => {
 
     const success = signup(email, password);
     if (success) {
-      navigate('/login'); // Redirect to login after signup
+      navigate('/login'); 
     } else {
       setError('Failed to create an account');
     }
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-purple-500">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
@@ -64,7 +64,7 @@ const SignupPage = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition"
+            className="w-full bg-purple-500 text-white py-2 rounded-lg hover:bg-green-600 transition"
           >
             Sign Up
           </button>
@@ -75,3 +75,6 @@ const SignupPage = () => {
 };
 
 export default SignupPage;
+
+// This code defines a SignUpPage component that allows users to create an account. It includes form validation for matching passwords and displays error messages when necessary. The component uses the useAuth context to handle user authentication and redirects to the login page upon successful signup.
+//  Styled using Tailwind CSS classes for a modern and responsive design.

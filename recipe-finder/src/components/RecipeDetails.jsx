@@ -70,7 +70,7 @@ const RecipeDetails = () => {
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
-          className="w-full h-64 md:h-80 object-cover"
+          className="w- h-78 md:h-80 object-cover"
         />
 
         <div className="p-6">
