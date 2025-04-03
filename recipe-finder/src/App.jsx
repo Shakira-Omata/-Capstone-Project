@@ -6,29 +6,43 @@ import LoginPage from './pages/LoginPage';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
-
+import PrivateRoute from './components/PrivateRoute'; 
 
 function App() {
   return (
     <Router>
       <AuthProvider>
         <Navbar />
-      <div className="w-full min-h-screen bg-purple-500">
-        <header className="bg-purple-500 text-black p-4">
-          <h1 className="text-5xl font-extrabold text-center">Recipe Finder</h1>
-        </header>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/recipe/:id" element={<RecipeDetails />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/login" element={<LoginPage />} />
-        </Routes>
-      </div>
+        <div className="w-full min-h-screen bg-purple-500">
+          <header className="bg-purple-500 text-black p-4">
+            <h1 className="text-5xl font-extrabold text-center">Recipe Finder</h1>
+          </header>
+          <Routes>
+            <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/login" element={<LoginPage />} />
+
+            {/* Protect the home and recipe details routes */}
+            <Route 
+              path="/" 
+              element={
+                <PrivateRoute>
+                  <HomePage />
+                </PrivateRoute>
+              }
+            />
+            <Route 
+              path="/recipe/:id" 
+              element={
+                <PrivateRoute>
+                  <RecipeDetails />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
+        </div>
         <Footer />
       </AuthProvider>
     </Router>
-  
   );
 }
 
