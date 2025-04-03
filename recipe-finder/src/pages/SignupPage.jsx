@@ -31,8 +31,7 @@ const SignupPage = () => {
       <div 
         className="flex flex-col items-center justify-center min-h-screen bg-purple-500 px-4"
         style={{ 
-          backgroundImage: "url('/Velvet.jpg')",
-          // backgroundImage: "url('/Heart.jpg')",  
+          backgroundImage: "url('/Velvet.jpg')", 
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
