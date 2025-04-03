@@ -5,7 +5,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Recipe Finder. All Rights Reserved.
         </p>
         <p className="text-xs">
-        Built by Omata – Happy Cooking!
+        Recipe magic by Shakira Omata. Happy cooking!
         </p>
       </footer>
     );
