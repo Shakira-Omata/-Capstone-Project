@@ -9,11 +9,12 @@ import Footer from './components/Footer';
 import PrivateRoute from './components/PrivateRoute'; 
 
 function App() {
+  
   return (
     <Router>
       <AuthProvider>
         <Navbar />
-        <div className="w-full min-h-screen bg-purple-500">
+        <div className="w-full min-h-screen bg-purple-500 dark:bg-gray-800">
           <header className="bg-purple-500 text-black p-4">
             <h1 className="text-5xl font-extrabold text-center">Recipe Finder</h1>
           </header>
@@ -21,7 +22,7 @@ function App() {
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/login" element={<LoginPage />} />
 
-            {/* Protect the home and recipe details routes */}
+            {/* Protect home and recipe details routes */}
             <Route 
               path="/" 
               element={
