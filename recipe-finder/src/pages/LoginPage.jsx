@@ -24,7 +24,7 @@ const LoginPage = () => {
     <div 
     className="flex flex-col items-center justify-center min-h-screen bg-purple-500 px-4"
     style={{ 
-      backgroundImage: "url('/Cake.jpg')",  
+      backgroundImage: "url('/Heart.jpg')",  
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",

@@ -27,7 +27,17 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-purple-500 px-4">
+    <div>
+      <div 
+        className="flex flex-col items-center justify-center min-h-screen bg-purple-500 px-4"
+        style={{ 
+          backgroundImage: "url('/Velvet.jpg')",
+          // backgroundImage: "url('/Heart.jpg')",  
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
         {/* Header */}
       <div className="text-center mb-40 bg-black p-20  shadow-md  rounded-lg">  
         <h1 className="text-4xl font-semibold text-white ">Welcome to Recipe Finder
@@ -75,6 +85,7 @@ const SignupPage = () => {
             Sign Up
           </button>
         </form>
+      </div>
       </div>
     </div>
   );

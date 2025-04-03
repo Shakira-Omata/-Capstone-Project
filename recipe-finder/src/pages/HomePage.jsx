@@ -49,6 +49,7 @@ const HomePage = () => {
   }, []);
 
   return (
+    
     <div className="container mx-auto px-4 py-8 w-full  bg-purple-500 rounded-lg shadow-sm"> 
       
       <SearchBar
