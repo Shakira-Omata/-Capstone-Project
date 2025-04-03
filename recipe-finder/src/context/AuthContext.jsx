@@ -5,16 +5,17 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
   const navigate = useNavigate();
 
   const login = (email, password) => {
-    // Mock authentication (replace with API call)
+
     setUser({ email });
     navigate('/');
   };
 
   const signup = (email, password) => {
-    // Mock signup (replace with API call)
+    
     setUser({ email });
     navigate('/');
   };
@@ -24,8 +25,14 @@ export const AuthProvider = ({ children }) => {
     navigate('/login');
   };
 
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', newDarkMode);
+  };
+
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, darkMode, toggleDarkMode }}>
       {children}
     </AuthContext.Provider>
   );
