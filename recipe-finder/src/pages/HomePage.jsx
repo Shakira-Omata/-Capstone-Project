@@ -31,7 +31,7 @@ const HomePage = () => {
     }
   };
 
-  // Initial load - show popular recipes
+  // Initial load 
   useEffect(() => {
     const fetchPopularRecipes = async () => {
       setLoading(true);
