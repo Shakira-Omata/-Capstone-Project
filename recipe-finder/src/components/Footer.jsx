@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-      <footer className="bg-purple-700 text-white text-center py-4 mt-8">
+      <footer className="bg-purple-700 text-black text-center py-4 mt-8">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Recipe Finder. All Rights Reserved.
         </p>

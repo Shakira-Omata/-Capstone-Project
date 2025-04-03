@@ -14,7 +14,7 @@ function App() {
       <AuthProvider>
         <Navbar />
       <div className="w-full min-h-screen bg-purple-500">
-        <header className="bg-purple-500 text-white p-4">
+        <header className="bg-purple-500 text-black p-4">
           <h1 className="text-5xl font-extrabold text-center">Recipe Finder</h1>
         </header>
         <Routes>
