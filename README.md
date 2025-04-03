@@ -12,7 +12,8 @@ Recipe Finder is a web/mobile application that allow users to search for recipes
     RecipeDetails.jsx
     RecipeCard.jsx
     NavBar.jsx
-    Footer.jsx
+    Footer.jsx 
+    PrivateRoute.jsx
     
  Pages   
     Home Page
