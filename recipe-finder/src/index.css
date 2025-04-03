@@ -8,6 +8,17 @@ body, html {
   padding: 0;
   width: 100%;
   overflow-x: hidden; 
+  background-color: #1f1f1f; /* Dark background */
+  color: #fff; /* Light text */
+  font-family: 'Inter', sans-serif;
+}
+
+.dark .bg-purple-500 {
+  background-color: #6b46c1; /* Dark purple */
+}
+
+.dark .text-black {
+  color: #fff; /* Dark text */
 }
 
 @media (prefers-color-scheme: light) {
