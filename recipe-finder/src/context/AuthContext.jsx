@@ -41,9 +41,9 @@ export const AuthProvider = ({ children }) => {
   
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add('dark-mode');
+      document.body.classList.add('dark');
     } else {
-      document.body.classList.remove('dark-mode');
+      document.body.classList.remove('dark');
     }
   }, [darkMode]);
 

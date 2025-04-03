@@ -60,7 +60,7 @@ const RecipeDetails = () => {
     <div className="max-w-full mx-auto p-4"> 
       <Link
         to="/"
-        className="inline-flex items-center mb-6 text-black hover:text-blue-700 transition"
+        className="inline-flex items-center mb-6 text-black hover:text-blue-700 transition dark:text-white"
       >
         <FiArrowLeft className="mr-2" />
         Back to recipes

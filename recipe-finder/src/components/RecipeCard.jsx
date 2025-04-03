@@ -9,10 +9,10 @@ const RecipeCard = ({ recipe }) => {
           alt={recipe.strMeal}
           className="w-full h-58 object-cover"
         />
-        <div className="p-4">
-          <h3 className="text-xl font-semibold mb-2">{recipe.strMeal}</h3>
+        <div className="p-4 dark:bg-gray-700">
+          <h3 className="text-xl font-semibold mb-2 dark:text-white">{recipe.strMeal}</h3>
           <div className="flex flex-wrap gap-2">
-            <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
+            <span className="bg-blue-100 dark:bg-blue-900 dark:text-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
               {recipe.strCategory}
             </span>
             <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">

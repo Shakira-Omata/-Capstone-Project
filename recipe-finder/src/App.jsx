@@ -14,9 +14,9 @@ function App() {
     <Router>
       <AuthProvider>
         <Navbar />
-        <div className="w-full min-h-screen bg-purple-500 dark:bg-gray-800">
-          <header className="bg-purple-500 text-black p-4">
-            <h1 className="text-5xl font-extrabold text-center">Recipe Finder</h1>
+        <div className="w-full min-h-screen bg-purple-500 dark:bg-gray-900">
+          <header className="bg-purple-500 text-black p-4 dark:bg-gray-900">
+            <h1 className="text-3xl font-bold text-center mb-8 dark:text-white">Recipe Finder</h1>
           </header>
           <Routes>
             <Route path="/signup" element={<SignUpPage />} />
