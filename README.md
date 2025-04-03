@@ -4,12 +4,15 @@ Recipe Finder is a web/mobile application that allow users to search for recipes
 
  # Key Features
  Recipe finder app structure 
+
+ * Api folder that stores the fetched api to be used 
  
 * Components  
     SearchBar.jsx
     RecipeDetails.jsx
     RecipeCard.jsx
     NavBar.jsx
+    Footer.jsx
     
  Pages   
     Home Page
@@ -17,11 +20,11 @@ Recipe Finder is a web/mobile application that allow users to search for recipes
     SignupPage
 
 Context
-    AuthContext
+    AuthContext  to handle authentication when a  user signs up 
 
 App.jsx
 
-
+* Add some images on the public folder 
 
 
 Dark mode 
@@ -35,7 +38,8 @@ Dark mode
 
 Javascript file
 vite config
-postcss
+tailwind.config
+postcss.config
 
 
 
